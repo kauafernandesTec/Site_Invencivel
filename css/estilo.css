@@ -2,18 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
     scroll-behavior: smooth;
    }
+
+   h1, h2, h3 {
+   font-family: 'Oswald', sans-serif;
+   }
+
    .container{
        max-width: 1200px;
        margin: auto;
        padding: 20px;
    }
-   
-   
+
    body{
-       background-color: #ffe556
+       background-color: #ffe556;
+       font-size: 18px;
+       font-family: 'Space Grotesk', sans-serif;
    
    }
    
@@ -22,9 +27,9 @@
    }
    
    p{
-       color: #ffffff;
+       color: #000000;
    }
-   
+
    h1{
        color: #ffffff;
    }
@@ -37,10 +42,19 @@
        color: #000000;
        
    }
-   
+
+   h4{
+       color: #ffffff;
+       
+   }
+
    
    footer{
-       color: #000000;
+    background-color: #303539;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
    }
    
    header{
@@ -65,6 +79,8 @@
    nav ul li a{
        color: #ffffff;
        text-decoration: none;
+       font-weight: bold; 
+       font-size: 1.2rem;
        
    }
    header .container{
@@ -72,6 +88,7 @@
        justify-content: space-between;
        align-items: center;
        flex-wrap: wrap;
+       margin: auto;
    }
    .logo{
        font-size: 2em;
@@ -80,14 +97,12 @@
    
    
    .banner{
-       background: url(../img/banner.jpg) no-repeat center/cover;
-       height: 450px;
+       background: url(../img/banner.png) no-repeat center/cover;
+       height: 550px;
+       margin-top: 90px;
        display: flex;
-       flex-direction: column;
-       margin-top: 100px;
-       align-items: flex-start;
+       align-items: center;
        justify-content: center;
-       padding-left: 30px;
        color: #ffffff;
        font-size: 1.5em;
        text-align: center;
@@ -102,11 +117,12 @@
    
    .sobre-container{
        display: flex;
-       justify-content: space-between;
+       justify-content: center;
        align-items: center;
        gap: 40px;
        max-width: 1400;
        margin: auto;
+       flex-wrap: wrap;
    }
    
    .sobre-texto{
@@ -137,6 +153,7 @@
    .sobre-texto a{
        color: #000000;
        text-decoration: none;
+       font-weight: bold;
        font-size: 0.9em;
    }
    
@@ -171,6 +188,13 @@
     width: 70%;
    }
 
+   #episodios h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
     #episodios .container {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
@@ -179,7 +203,7 @@
      width: 100%;
      text-align: center;
     }
- 
+
     #episodios .item {
      background-color: #00bcf0;
      border: 1px solid #ddd;
@@ -201,7 +225,7 @@
    }
 
    #episodios .item p {
-    margin-top: 15px;
+    margin-top: 5px;
     font-size: 0.95em;
     color: #303539;
    }
@@ -238,11 +262,11 @@
     cursor: pointer;
    }
 
-   /* Modal */
    .modal {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.6);
@@ -256,7 +280,9 @@
    }
 
    .modal-content {
-    background-color: #ffffff;
+    max-height: 90vh;
+    overflow-y: auto;  
+    background-color: whitesmoke;
     padding: 30px;
     border-radius: 10px;
     max-width: 400px;
@@ -273,42 +299,6 @@
     border-radius: 6px;
     text-decoration: none;
    }
-   
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.6);
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal:target {
-    display: flex;
-}
-
-.modal-content {
-    background-color: whitesmoke;
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 400px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-}
-
-.close-btn {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 8px 16px;
-    background: red;
-    color: whitesmoke;
-    border-radius: 6px;
-    text-decoration: none;
-}
 
 .container-btn2 {
     margin-top: 4rem;
@@ -322,25 +312,68 @@
 
 .modal p {
     color: black;
+    margin-top: 5px;
 }
 
+#personagens h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    border: 3px solid #00bcf0;
+  }
+  
+  .galeria img:hover {
+    transform: scale(1.05);
+  }
+
+  #contato {
+    text-align: center;
+    margin-top: 50px;
+  }
 
    @media (max-width:675px){
        header .container, .sobre-container{
            flex-direction: column;
            text-align: center;
        }
-       nav ul{
+       nav ul {
            margin-top: 10px;
            flex-direction: column;
        }
-       .banner{
+       .banner {
            margin-top: 170px;
        }
    
-       section{
+       section {
            scroll-margin-top: 200px;
        }
+
+       .modal-content {
+        margin-top: 300px;
+        max-height: 60vh;
+    }
+
+       .galeria {
+        flex-direction: column;
+        display: flex;
+    }
    
        
     }
