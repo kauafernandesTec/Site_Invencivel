@@ -98,7 +98,7 @@
    
    .banner{
        background: url(../img/banner.png) no-repeat center/cover;
-       height: 550px;
+       height: 40vh;
        margin-top: 90px;
        display: flex;
        align-items: center;
