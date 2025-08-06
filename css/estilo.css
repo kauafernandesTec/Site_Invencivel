@@ -50,7 +50,7 @@
 
    
    footer{
-    background-color: #303539;
+    background-color: #00bcf0;
     color: #ffffff;
     text-align: center;
     padding: 1rem;
@@ -108,6 +108,19 @@
        text-align: center;
        text-shadow: 2px 5px 5px #000000;
    }
+
+   .banner-contato{
+    background: url(../img/banner.png) no-repeat center/cover;
+    height: 40vh;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 5px 5px #000000;
+}
    
    #sobre{
        padding: 35px;
