@@ -356,9 +356,38 @@
     transform: scale(1.05);
   }
 
+
+  .formulario-contato {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    color: #000000;
+  }
+  
+  .grupo-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    font-size: 1.3em;
+  }
+
+
+
   #contato {
     text-align: center;
     margin-top: 50px;
+  }
+
+  body.pagina-contato{
+    background-color: #00bcf0;
+  }
+
+  #contato.html {
+    background-color: #000000;
   }
 
    @media (max-width:675px){
