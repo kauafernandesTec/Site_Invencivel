@@ -21,6 +21,13 @@
        font-family: 'Space Grotesk', sans-serif;
    
    }
+
+   .logo-img {
+    height: 60px;
+    width: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
+}
    
    section{
        scroll-margin-top: 100px;
@@ -317,6 +324,8 @@
     width: 90%;
     margin: 40px auto;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .tabela h2 {
